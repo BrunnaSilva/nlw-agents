@@ -1,0 +1,36 @@
+# Variable
+@baseUrl = http://localhost:3333
+
+### Get Rooms
+# @name getRooms
+GET {{baseUrl}}/rooms
+
+### Create Room
+# @name createRoom
+POST {{baseUrl}}/rooms
+Content-Type: application/json
+
+{
+ "name": "Engenharia de Software",
+ "description": "Assuntos de Engenharia de Software"
+}
+
+### 
+
+@roomId = {{createRoom.response.body.$.roomId}}
+
+### Get Room Questions
+# @name getRoomQuestions
+GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+###
+
+### Create Question
+# @name createQuestion
+POST {{baseUrl}}/rooms/610a5e39-d80a-44ab-91ca-087b2e88ec8e/questions
+Content-Type: application/json
+
+{
+ "question": "O que é IA?"
+}
+

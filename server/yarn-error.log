@@ -1,0 +1,51 @@
+Arguments: 
+  /Users/bssilva/.asdf/installs/nodejs/22.12.0/bin/node /opt/homebrew/bin/yarn
+
+PATH: 
+  /Users/bssilva/.asdf/plugins/nodejs/shims:/Users/bssilva/.asdf/installs/nodejs/22.12.0/bin:/Users/bssilva/.asdf/shims:/Users/bssilva/.asdf/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:/Users/bssilva/Library/Java/JavaVirtualMachines/jbr-17.0.14/Contents/Home/bin:/opt/homebrew/opt/openssl@1.1/bin:/opt/homebrew/bin:/Users/bssilva/.rbenv/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Applications/CyberArk EPM.app/Contents/Helpers:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:/Users/bssilva/Library/Java/JavaVirtualMachines/jbr-17.0.14/Contents/Home/bin:/opt/homebrew/opt/openssl@1.1/bin:/opt/homebrew/bin:/Users/bssilva/.rbenv/bin:/Users/bssilva/Library/Android/sdk/emulator:/Users/bssilva/Library/Android/sdk/platform-tools:/Users/bssilva/Library/Android/sdk/cmdline-tools/11.0/bin:/Users/bssilva/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/bssilva/Library/Android/sdk/emulator:/Users/bssilva/Library/Android/sdk/platform-tools:/Users/bssilva/Library/Android/sdk/cmdline-tools/11.0/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  22.12.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/bssilva/Documents/rocketseat/agents/server/package.json: Expected double-quoted property name in JSON at position 163 (line 8 column 3)
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "dev": "node --experimental-strip-types src/server.ts",
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "@fastify/cors": "^11.0.1",
+      "@types/node": "^24.0.12",
+      "fastify": "^5.4.0",
+      "fastify-type-provider-zod": "^5.0.2",
+      "typescript": "^5.8.3",
+      "zod": "^3.25.76"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
